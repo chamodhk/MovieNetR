@@ -21,7 +21,8 @@ with open(submission_file_path, 'r', encoding="utf-8") as submission_file:
                     name = obj.get("name"),
                     self_text = obj.get("selftext"),
                     title = obj.get("title"),
-                    score = obj.get("url")
+                    score = obj.get("score"),
+                    url = obj.get("url")
                 )
             )
 
@@ -42,5 +43,6 @@ if batch:
     session.commit()
     batch.clear()
 
+session.close()
 print("Submission storing completed!")
 print(f"{processed} submissions stored!")

@@ -40,5 +40,7 @@ if batch:
     session.commit()
     batch.clear()
 
+
+session.close()
 print("Comment storing completed!")
 print(f"{processed} comments stored!")

@@ -11,3 +11,9 @@ class Submission(Base):
     score = Column(Integer)
     url = Column(Text)
 
+
+class MovieTitleLink(Base):
+    __tablename__ = "movie_title_links"
+    id = Column(Integer, primary_key = True, autoincrement=True)
+    submission_id = Column(Text, ForeignKey("submissions.submission_id"))
+    movie_id = Column(Text)
