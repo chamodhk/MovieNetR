@@ -7,3 +7,10 @@ class Comment(Base):
     parent_id = Column(Text)
     body = Column(Text)
     score = Column(Integer)
+
+
+class CommentMovieLink(Base):
+    __tablename__ = "comment_movie_link"
+    id = Column(Integer, autoincrement=True, primary_key=True)
+    comment_id = Column(Integer)
+    movie_id = Column(Integer)
