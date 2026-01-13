@@ -6,6 +6,7 @@ class Submission(Base):
     submission_id = Column(Integer, primary_key = True, autoincrement = True)
     id = Column(Text)
     name = Column(Text)
+    title = Column(Text)
     self_text = Column(Text)
     score = Column(Integer)
     url = Column(Text)

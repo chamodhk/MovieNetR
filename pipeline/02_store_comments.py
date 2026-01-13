@@ -6,7 +6,7 @@ comment_file_path = "./input/MovieSuggestions_comments"
 
 session = get_db_session()
 
-BATCH_SIZE = 200
+BATCH_SIZE = 20000
 processed = 0
 batch = []
 

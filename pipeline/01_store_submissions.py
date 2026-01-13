@@ -20,6 +20,7 @@ with open(submission_file_path, 'r', encoding="utf-8") as submission_file:
                     id  = obj.get("id"),
                     name = obj.get("name"),
                     self_text = obj.get("selftext"),
+                    title = obj.get("title"),
                     score = obj.get("url")
                 )
             )
