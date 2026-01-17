@@ -1,4 +1,3 @@
 input/
 db/
-network/
 populate_new_db.py
