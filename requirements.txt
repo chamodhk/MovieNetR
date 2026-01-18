@@ -1,0 +1,6 @@
+SQLAlchemy
+gliner
+matplotlib
+networkx
+pandas
+rapidfuzz

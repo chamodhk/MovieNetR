@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 # -------------------------
 # CONFIG
 # -------------------------
-GEXF_PATH = "movie_net.gexf"
-MOVIE = "Manhattan"
-TOP_K = 20        # how many strongest neighbors to keep
-MIN_WEIGHT = 3    # ignore very weak edges
+GEXF_PATH = "./network/movie_net.gexf"
+MOVIE = "Forest Gump"
+TOP_K = 25        # how many strongest neighbors to keep
+MIN_WEIGHT = 1   # ignore very weak edges
 SEED = 42
 
 # -------------------------
