@@ -1,11 +1,11 @@
-import Graph from "graphology";
-import Sigma from "sigma";
-import { parse } from "graphology-gexf/browser";
+import Graph from "https://esm.sh/graphology@0.26.0";
+import Sigma from "https://esm.sh/sigma@3.0.2";
+import { parse } from "https://esm.sh/graphology-gexf@0.13.2/browser";
 
 let renderer = null;
 
 // Load external GEXF file
-fetch("/movie_graph.gexf")
+fetch("./network/movie_graph.gexf")
   .then((res) => res.text())
   .then((gexf) => {
     // Parse GEXF string

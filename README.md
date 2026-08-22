@@ -11,23 +11,18 @@ being calculated in the browser.
 
 ## Run the graph explorer
 
-The frontend requires Node.js and npm. Install its dependencies:
+The frontend is static and loads its JavaScript dependencies from `esm.sh`.
+Start a local HTTP server from the repository root:
 
 ```powershell
-npm install
+python -m http.server 8000
 ```
 
-Start a local development server:
-
-```powershell
-npx vite
-```
-
-Open the local address printed by Vite, normally `http://localhost:5173`.
+Open `http://localhost:8000`.
 Opening `index.html` directly will not work because the frontend uses JavaScript
 modules and fetches the graph as a separate file.
 
-The explorer loads `movie_graph.gexf` and provides controls to:
+The explorer loads `network/movie_graph.gexf` and provides controls to:
 
 - Zoom in and out.
 - Reset the camera.
@@ -66,6 +61,6 @@ because they contain large local datasets.
 
 - `index.html` contains the graph viewer interface.
 - `main.js` loads the GEXF network and configures Sigma.js.
-- `movie_graph.gexf` is the graph currently shown by the frontend.
+- `network/movie_graph.gexf` is the graph currently shown by the frontend.
 - `network/` contains other generated or preserved graph artifacts.
 - `core/`, `models/`, and `pipeline/` contain the Python data-processing code.
