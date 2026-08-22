@@ -1,0 +1,17 @@
+{
+  "name": "new-folder-(2)",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "graphology": "^0.26.0",
+    "graphology-gexf": "^0.13.2",
+    "sigma": "^3.0.2"
+  }
+}
